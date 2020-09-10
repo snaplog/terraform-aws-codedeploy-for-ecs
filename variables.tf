@@ -81,3 +81,9 @@ variable "tags" {
   type        = map
   description = "A mapping of tags to assign to all resources."
 }
+
+variable "deploy_config_name" {
+  default     = "CodeDeployDefault.ECSAllAtOnce"
+  type        = string
+  description = "The deployment config to follow. defaults to CodeDeployDefault.ECSAllAtOnce"
+}
